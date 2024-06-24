@@ -1,0 +1,9 @@
+digraph IncludeHierarchy {
+  "subfolder/subfolder_header.h" -> "vector";
+  "file.h" -> "iostream";
+  "file.h" -> "header.h";
+  "main.cpp" -> "file.h";
+  "file.cpp" -> "file.h";
+  "header.h" -> "string";
+  "header.h" -> "subfolder/subfolder_header.h";
+}

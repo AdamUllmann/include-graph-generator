@@ -1,0 +1,17 @@
+header.h includes:
+  subfolder/subfolder_header.h
+  string
+
+file.cpp includes:
+  file.h
+
+main.cpp includes:
+  file.h
+
+file.h includes:
+  header.h
+  iostream
+
+subfolder/subfolder_header.h includes:
+  vector
+
