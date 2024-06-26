@@ -49,6 +49,11 @@ void generateDotFile(const IncludeMap& includeMap, const std::string& outputPath
 	}
 
 	outFile << "digraph IncludeHierarchy {" << std::endl;
+	outFile << "  rankdir=LR;" << std::endl;
+	outFile << "  nodesep=0.5;" << std::endl;
+	outFile << "  ranksep=1.2;" << std::endl;
+	outFile << "  node [shape=ellipse, style=filled, fillcolor=lightgrey, fontsize=10];" << std::endl;
+	outFile << "  edge [color=black];" << std::endl;
 
 	for (const auto& [file, includes] : includeMap) {
 		for (const auto& include : includes) {
